@@ -12,8 +12,9 @@
 #import <WSControl/WSControl.h>
 #import "BBTaskRequest.h"
 #import "GlobalPrefix.h"
+#import "BBTaskTableViewCell.h"
 
-@interface BBRootViewController ()
+@interface BBRootViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -91,6 +92,7 @@
 
 - (void)reloadUI {
     [self.tableView reloadData];
+    self.tableView.tableFooterView = [UIView new];
 }
 
 - (void)autoSignIn
@@ -147,6 +149,26 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark TableViewDelegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.dataSource count];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 94.0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    BBTaskTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([BBTaskTableViewCell class]) forIndexPath:indexPath];
+
+    return cell;
 }
 
 /*
