@@ -190,6 +190,8 @@
 		F2E7C3731C8D34AC00FEA489 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		F2E7C3751C8D34AC00FEA489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2E7C3771C8D34AC00FEA489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2E7C3821C8D42BD00FEA489 /* BBFlightListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFlightListRequest.h; sourceTree = "<group>"; };
+		F2E7C3831C8D42BD00FEA489 /* BBFlightListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFlightListRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +318,8 @@
 				63119F921C8D2298008F1D8B /* BBDataRequest.m */,
 				63DB072D1C8D243D003DE2CD /* BBUserRequest.h */,
 				63DB072E1C8D243D003DE2CD /* BBUserRequest.m */,
+				F2E7C3821C8D42BD00FEA489 /* BBFlightListRequest.h */,
+				F2E7C3831C8D42BD00FEA489 /* BBFlightListRequest.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -724,6 +728,7 @@
 				63119F7E1C8D1501008F1D8B /* UIViewController+TapResignFirstResponder.m in Sources */,
 				63133A671C892E6B0063D405 /* AppDelegate.m in Sources */,
 				63119F931C8D2298008F1D8B /* BBDataRequest.m in Sources */,
+				F2E7C3841C8D42BD00FEA489 /* BBFlightListRequest.m in Sources */,
 				63119F7B1C8D1501008F1D8B /* UIViewController+CaptureView.m in Sources */,
 				63119F7D1C8D1501008F1D8B /* UIViewController+Keyboard.m in Sources */,
 				63DB07441C8D2F7B003DE2CD /* OPKVDatabase.m in Sources */,
