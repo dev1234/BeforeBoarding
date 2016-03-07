@@ -18,6 +18,7 @@
     self.arrivalTimeLabel.text = [task.arrivalTime substringWithRange:NSMakeRange(11, 5)];
     self.departAirportLabel.text = task.departure.airportName;
     self.arrivalAirportLabel.text = task.arrival.airportName;
+    self.taskNameLabel.text = task.taskName;
 }
 
 /*

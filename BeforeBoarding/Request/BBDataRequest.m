@@ -17,7 +17,9 @@
     self = [super init];
     if (self) {
         self.type = WSDataRequestTypeGet;
-        self.requestURL = @"http://10.77.80.20/api";
+//        self.requestURL = @"http://10.77.80.20/api";
+        self.requestURL = @"http://172.20.10.5/api";
+
     }
     return self;
 }

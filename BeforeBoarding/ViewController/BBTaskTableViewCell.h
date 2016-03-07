@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *departAirportLabel;
 @property (weak, nonatomic) IBOutlet UILabel *arrivalTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *arrivalAirportLabel;
+@property (weak, nonatomic) IBOutlet UILabel *taskNameLabel;
 
 @end

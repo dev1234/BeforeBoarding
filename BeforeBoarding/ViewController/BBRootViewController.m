@@ -17,6 +17,7 @@
 @interface BBRootViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIButton *titleButton;
 
 @end
 
@@ -61,8 +62,9 @@
     else if (BBUserStatusSignIn == status) {
         // 用户登录成功
         [self dismissViewControllerAnimated:YES completion:nil];
-        [self dismissProgressHud];
-        [self requestForTasks];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self requestForTasks];
+        });
     }
     else if (BBUserStatusSignOut == status) {
         // 用户登出
@@ -75,7 +77,6 @@
     if (![BBSession session].user) {
         return;
     }
-    [self showProgressHudWithMessage:@"loading..."];
     BBTaskRequest *request = [BBTaskRequest request];
     request.path = [request.path stringByAppendingPathComponent:[BBSession session].user.pilotID];
     [request sendRequest:^(id data, NSError *error) {
@@ -98,7 +99,8 @@
         return;
     }
     [self.tableView reloadData];
-    self.title = [NSString stringWithFormat:@"%@'s tasks", [BBSession session].user.userName];
+    NSString *title  = [BBSession session].user.userName;
+    [self.titleButton setTitle:title forState:UIControlStateNormal];
     self.tableView.tableFooterView = [UIView new];
 }
 
@@ -108,6 +110,7 @@
 
 - (void)autoSignIn
 {
+    [self showProgressHudWithMessage:@"loading"];
     __weak typeof (self) weakSelf = self;
     if ([[BBSession session] canAutoSignIn]) {
         [[BBSession session] autoSignIn:^(NSError *error) {
@@ -182,14 +185,14 @@
     return cell;
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"showDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        [segue.destinationViewController setValue:self.dataSource[indexPath.row] forKey:@"task"];
+    }
 }
-*/
 
 @end

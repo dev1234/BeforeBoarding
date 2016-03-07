@@ -46,6 +46,9 @@
 		63DB07591C8D5171003DE2CD /* BBWeatherObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07581C8D5171003DE2CD /* BBWeatherObject.m */; };
 		63DB075C1C8D69C9003DE2CD /* OPBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB075B1C8D69C9003DE2CD /* OPBaseTableViewCell.m */; };
 		63DB075F1C8D6A45003DE2CD /* BBTaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB075E1C8D6A45003DE2CD /* BBTaskTableViewCell.m */; };
+		63DB07621C8D7A8D003DE2CD /* BBTaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07611C8D7A8D003DE2CD /* BBTaskDetailViewController.m */; };
+		63DB07651C8D7E83003DE2CD /* OPAnnotaion.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07641C8D7E83003DE2CD /* OPAnnotaion.m */; };
+		63DB07681C8D85B6003DE2CD /* BBWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07671C8D85B6003DE2CD /* BBWeatherRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +160,12 @@
 		63DB075B1C8D69C9003DE2CD /* OPBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPBaseTableViewCell.m; sourceTree = "<group>"; };
 		63DB075D1C8D6A45003DE2CD /* BBTaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTaskTableViewCell.h; sourceTree = "<group>"; };
 		63DB075E1C8D6A45003DE2CD /* BBTaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTaskTableViewCell.m; sourceTree = "<group>"; };
+		63DB07601C8D7A8D003DE2CD /* BBTaskDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTaskDetailViewController.h; sourceTree = "<group>"; };
+		63DB07611C8D7A8D003DE2CD /* BBTaskDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTaskDetailViewController.m; sourceTree = "<group>"; };
+		63DB07631C8D7E83003DE2CD /* OPAnnotaion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPAnnotaion.h; sourceTree = "<group>"; };
+		63DB07641C8D7E83003DE2CD /* OPAnnotaion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPAnnotaion.m; sourceTree = "<group>"; };
+		63DB07661C8D85B6003DE2CD /* BBWeatherRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBWeatherRequest.h; sourceTree = "<group>"; };
+		63DB07671C8D85B6003DE2CD /* BBWeatherRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBWeatherRequest.m; sourceTree = "<group>"; };
 		A3C88915853202EBC33F904B /* libPods-BeforeBoarding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeforeBoarding.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A528BB7B7A74FF6E630591AD /* Pods-BeforeBoarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeforeBoarding.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeforeBoarding/Pods-BeforeBoarding.release.xcconfig"; sourceTree = "<group>"; };
 		B4FE8CE50958E3C68367271D /* Pods-BeforeBoarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeforeBoarding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeforeBoarding/Pods-BeforeBoarding.debug.xcconfig"; sourceTree = "<group>"; };
@@ -299,6 +308,8 @@
 				63DB072E1C8D243D003DE2CD /* BBUserRequest.m */,
 				63DB074E1C8D4FE5003DE2CD /* BBTaskRequest.h */,
 				63DB074F1C8D4FE5003DE2CD /* BBTaskRequest.m */,
+				63DB07661C8D85B6003DE2CD /* BBWeatherRequest.h */,
+				63DB07671C8D85B6003DE2CD /* BBWeatherRequest.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -323,6 +334,10 @@
 				63DB07371C8D2666003DE2CD /* BBSignInViewController.m */,
 				63DB075D1C8D6A45003DE2CD /* BBTaskTableViewCell.h */,
 				63DB075E1C8D6A45003DE2CD /* BBTaskTableViewCell.m */,
+				63DB07631C8D7E83003DE2CD /* OPAnnotaion.h */,
+				63DB07641C8D7E83003DE2CD /* OPAnnotaion.m */,
+				63DB07601C8D7A8D003DE2CD /* BBTaskDetailViewController.h */,
+				63DB07611C8D7A8D003DE2CD /* BBTaskDetailViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -659,12 +674,15 @@
 				63DB07591C8D5171003DE2CD /* BBWeatherObject.m in Sources */,
 				63119F781C8D1501008F1D8B /* UIColor+Hex.m in Sources */,
 				63133A641C892E6B0063D405 /* main.m in Sources */,
+				63DB07681C8D85B6003DE2CD /* BBWeatherRequest.m in Sources */,
 				63119F761C8D1501008F1D8B /* NSDictionary+Safe.m in Sources */,
 				63119F7A1C8D1501008F1D8B /* UIView+Selected.m in Sources */,
+				63DB07651C8D7E83003DE2CD /* OPAnnotaion.m in Sources */,
 				63119F731C8D1501008F1D8B /* NSArray+Safe.m in Sources */,
 				63DB075F1C8D6A45003DE2CD /* BBTaskTableViewCell.m in Sources */,
 				63119F791C8D1501008F1D8B /* UIImage+ImageScale.m in Sources */,
 				63DB07501C8D4FE5003DE2CD /* BBTaskRequest.m in Sources */,
+				63DB07621C8D7A8D003DE2CD /* BBTaskDetailViewController.m in Sources */,
 				63119F751C8D1501008F1D8B /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
