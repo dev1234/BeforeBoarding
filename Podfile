@@ -12,6 +12,10 @@ pod 'AFNetworkActivityLogger'
 pod 'KVOController'
 pod 'SSKeychain'
 pod 'YYModel'
+pod 'WSDataRequest'
+pod 'MJRefresh'
+pod 'WSControl'
+pod 'UMengSocial'
 
 end
 
