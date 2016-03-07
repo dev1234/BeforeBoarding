@@ -34,6 +34,11 @@
 		63DB07321C8D245F003DE2CD /* BBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07311C8D245F003DE2CD /* BBBaseViewController.m */; };
 		63DB07351C8D24C9003DE2CD /* BBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07341C8D24C9003DE2CD /* BBRootViewController.m */; };
 		63DB07381C8D2666003DE2CD /* BBSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07371C8D2666003DE2CD /* BBSignInViewController.m */; };
+		63DB073E1C8D2DE3003DE2CD /* BBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB073D1C8D2DE3003DE2CD /* BBSession.m */; };
+		63DB07411C8D2E2B003DE2CD /* BBUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07401C8D2E2B003DE2CD /* BBUserObject.m */; };
+		63DB07441C8D2F7B003DE2CD /* OPKVDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07431C8D2F7B003DE2CD /* OPKVDatabase.m */; };
+		63DB07471C8D2FB9003DE2CD /* OPRunOnce.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07461C8D2FB9003DE2CD /* OPRunOnce.m */; };
+		63DB074A1C8D37BD003DE2CD /* OPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07491C8D37BD003DE2CD /* OPError.m */; };
 		F2E7C3031C89F59800FEA489 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C3011C89F59800FEA489 /* Interface.storyboard */; };
 		F2E7C3051C89F59800FEA489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C3041C89F59800FEA489 /* Assets.xcassets */; };
 		F2E7C30C1C89F59800FEA489 /* BeforeBoarding WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F2E7C30B1C89F59800FEA489 /* BeforeBoarding WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -156,6 +161,16 @@
 		63DB07341C8D24C9003DE2CD /* BBRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRootViewController.m; sourceTree = "<group>"; };
 		63DB07361C8D2666003DE2CD /* BBSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSignInViewController.h; sourceTree = "<group>"; };
 		63DB07371C8D2666003DE2CD /* BBSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSignInViewController.m; sourceTree = "<group>"; };
+		63DB073C1C8D2DE3003DE2CD /* BBSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSession.h; sourceTree = "<group>"; };
+		63DB073D1C8D2DE3003DE2CD /* BBSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSession.m; sourceTree = "<group>"; };
+		63DB073F1C8D2E2B003DE2CD /* BBUserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUserObject.h; sourceTree = "<group>"; };
+		63DB07401C8D2E2B003DE2CD /* BBUserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUserObject.m; sourceTree = "<group>"; };
+		63DB07421C8D2F7B003DE2CD /* OPKVDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPKVDatabase.h; sourceTree = "<group>"; };
+		63DB07431C8D2F7B003DE2CD /* OPKVDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPKVDatabase.m; sourceTree = "<group>"; };
+		63DB07451C8D2FB9003DE2CD /* OPRunOnce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPRunOnce.h; sourceTree = "<group>"; };
+		63DB07461C8D2FB9003DE2CD /* OPRunOnce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPRunOnce.m; sourceTree = "<group>"; };
+		63DB07481C8D37BD003DE2CD /* OPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPError.h; sourceTree = "<group>"; };
+		63DB07491C8D37BD003DE2CD /* OPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPError.m; sourceTree = "<group>"; };
 		A3C88915853202EBC33F904B /* libPods-BeforeBoarding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeforeBoarding.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A528BB7B7A74FF6E630591AD /* Pods-BeforeBoarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeforeBoarding.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeforeBoarding/Pods-BeforeBoarding.release.xcconfig"; sourceTree = "<group>"; };
 		B4FE8CE50958E3C68367271D /* Pods-BeforeBoarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeforeBoarding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeforeBoarding/Pods-BeforeBoarding.debug.xcconfig"; sourceTree = "<group>"; };
@@ -222,9 +237,13 @@
 		63119F4D1C8D1501008F1D8B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				63DB07481C8D37BD003DE2CD /* OPError.h */,
+				63DB07491C8D37BD003DE2CD /* OPError.m */,
+				63119F841C8D155B008F1D8B /* OPCommon.h */,
+				63DB07451C8D2FB9003DE2CD /* OPRunOnce.h */,
+				63DB07461C8D2FB9003DE2CD /* OPRunOnce.m */,
 				63119F851C8D15C8008F1D8B /* UIViewController+Utility.h */,
 				63119F861C8D15C8008F1D8B /* UIViewController+Utility.m */,
-				63119F841C8D155B008F1D8B /* OPCommon.h */,
 				63119F4E1C8D1501008F1D8B /* Category */,
 			);
 			path = Common;
@@ -271,6 +290,10 @@
 		63119F8C1C8D21BD008F1D8B /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				63DB07421C8D2F7B003DE2CD /* OPKVDatabase.h */,
+				63DB07431C8D2F7B003DE2CD /* OPKVDatabase.m */,
+				63DB073C1C8D2DE3003DE2CD /* BBSession.h */,
+				63DB073D1C8D2DE3003DE2CD /* BBSession.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -278,6 +301,8 @@
 		63119F8D1C8D21BD008F1D8B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63DB073F1C8D2E2B003DE2CD /* BBUserObject.h */,
+				63DB07401C8D2E2B003DE2CD /* BBUserObject.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -687,8 +712,12 @@
 				63DB07351C8D24C9003DE2CD /* BBRootViewController.m in Sources */,
 				63119F741C8D1501008F1D8B /* NSData+AES.m in Sources */,
 				63119F881C8D15C8008F1D8B /* UIViewController+Utility.m in Sources */,
+				63DB07411C8D2E2B003DE2CD /* BBUserObject.m in Sources */,
 				63119F771C8D1501008F1D8B /* NSString+Additions.m in Sources */,
+				63DB074A1C8D37BD003DE2CD /* OPError.m in Sources */,
+				63DB073E1C8D2DE3003DE2CD /* BBSession.m in Sources */,
 				63119F4C1C8D14B4008F1D8B /* OPStyleFactory.m in Sources */,
+				63DB07471C8D2FB9003DE2CD /* OPRunOnce.m in Sources */,
 				63DB072F1C8D243D003DE2CD /* BBUserRequest.m in Sources */,
 				63DB07381C8D2666003DE2CD /* BBSignInViewController.m in Sources */,
 				63119F7E1C8D1501008F1D8B /* UIViewController+TapResignFirstResponder.m in Sources */,
@@ -696,6 +725,7 @@
 				63119F931C8D2298008F1D8B /* BBDataRequest.m in Sources */,
 				63119F7B1C8D1501008F1D8B /* UIViewController+CaptureView.m in Sources */,
 				63119F7D1C8D1501008F1D8B /* UIViewController+Keyboard.m in Sources */,
+				63DB07441C8D2F7B003DE2CD /* OPKVDatabase.m in Sources */,
 				63DB07321C8D245F003DE2CD /* BBBaseViewController.m in Sources */,
 				63119F7C1C8D1501008F1D8B /* UIViewController+Error.m in Sources */,
 				63119F781C8D1501008F1D8B /* UIColor+Hex.m in Sources */,

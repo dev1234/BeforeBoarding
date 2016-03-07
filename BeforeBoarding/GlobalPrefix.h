@@ -11,7 +11,7 @@
 
 #ifdef __OBJC__
 #import "OPCommon.h"
-//#import "OPError.h"
+#import "OPError.h"
 //#import "OPAction.h"
 //#import "Config.h"
 //#import "OPUtility.h"

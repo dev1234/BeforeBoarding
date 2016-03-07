@@ -53,6 +53,27 @@ static void *HudVisibleKey = &HudVisibleKey;
 }
 
 - (void)showErrorInHudWithError:(NSError *)error {
+    // TODO: 专门处理网络错误
+    NSLog(@"%@", error.localizedDescription);
+    if ([error.domain isEqualToString:NSURLErrorDomain]) {
+        if (error.code == OPErrorCodeNetWorkFaild) {
+            [SVProgressHUD showErrorWithStatus:@"网络连接失败，检查您的网络" maskType:SVProgressHUDMaskTypeBlack];
+        }
+        if (error.code == OPErrorCodeTimeOut) {
+            [SVProgressHUD showErrorWithStatus:@"请求超时，请您稍后再试" maskType:SVProgressHUDMaskTypeBlack];
+        }        return;
+    }
+    if ([error.domain isEqualToString:OPErrorDomain]) {
+        if (error.localizedDescription) {
+            [SVProgressHUD showErrorWithStatus:error.localizedDescription maskType:SVProgressHUDMaskTypeBlack];
+        }
+        else {
+            [SVProgressHUD showErrorWithStatus:error.localizedFailureReason maskType:SVProgressHUDMaskTypeBlack];
+        }
+        return;
+    }
+    
+    [SVProgressHUD showErrorWithStatus:@"bad network!" maskType:SVProgressHUDMaskTypeBlack];
 }
 
 - (void)showErrorMessageInHud:(NSString *)error {
