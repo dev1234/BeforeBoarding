@@ -10,6 +10,7 @@
 #import <KVOController/FBKVOController.h>
 #import "BBSession.h"
 #import <WSControl/WSControl.h>
+#import "BBTaskRequest.h"
 
 @interface BBRootViewController ()
 
@@ -59,13 +60,21 @@
         // 用户登录成功
         [self dismissViewControllerAnimated:YES completion:nil];
         [self dismissProgressHud];
-//        [self requestForClassList];
+        [self requestForTasks];
     }
     else if (BBUserStatusSignOut == status) {
         // 用户登出
         [self cleanUserData];
         [self showSininWithAnimate:YES];
     }
+}
+
+- (void)requestForTasks {
+    BBTaskRequest *request = [BBTaskRequest request];
+    request.path = [request.path stringByAppendingPathComponent:[BBSession session].user.pilotID];
+    [request sendRequest:^(id data, NSError *error) {
+        
+    }];
 }
 
 - (void)autoSignIn
