@@ -33,6 +33,8 @@
     
     //  设置颜色等
     [OPStyleFactory applyStyle];
+    
+    
     return YES;
 }
 

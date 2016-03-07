@@ -22,6 +22,7 @@
 		63119F7D1C8D1501008F1D8B /* UIViewController+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 63119F641C8D1501008F1D8B /* UIViewController+Keyboard.m */; };
 		63119F7E1C8D1501008F1D8B /* UIViewController+TapResignFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 63119F661C8D1501008F1D8B /* UIViewController+TapResignFirstResponder.m */; };
 		63119F881C8D15C8008F1D8B /* UIViewController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 63119F861C8D15C8008F1D8B /* UIViewController+Utility.m */; };
+		63119F931C8D2298008F1D8B /* BBDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 63119F921C8D2298008F1D8B /* BBDataRequest.m */; };
 		63133A641C892E6B0063D405 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63133A631C892E6B0063D405 /* main.m */; };
 		63133A671C892E6B0063D405 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63133A661C892E6B0063D405 /* AppDelegate.m */; };
 		63133A6D1C892E6B0063D405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63133A6B1C892E6B0063D405 /* Main.storyboard */; };
@@ -29,6 +30,10 @@
 		63133A721C892E6B0063D405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63133A701C892E6B0063D405 /* LaunchScreen.storyboard */; };
 		63133A7D1C892E6B0063D405 /* BeforeBoardingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63133A7C1C892E6B0063D405 /* BeforeBoardingTests.m */; };
 		63133A881C892E6C0063D405 /* BeforeBoardingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63133A871C892E6C0063D405 /* BeforeBoardingUITests.m */; };
+		63DB072F1C8D243D003DE2CD /* BBUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB072E1C8D243D003DE2CD /* BBUserRequest.m */; };
+		63DB07321C8D245F003DE2CD /* BBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07311C8D245F003DE2CD /* BBBaseViewController.m */; };
+		63DB07351C8D24C9003DE2CD /* BBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07341C8D24C9003DE2CD /* BBRootViewController.m */; };
+		63DB07381C8D2666003DE2CD /* BBSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07371C8D2666003DE2CD /* BBSignInViewController.m */; };
 		F2E7C3031C89F59800FEA489 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C3011C89F59800FEA489 /* Interface.storyboard */; };
 		F2E7C3051C89F59800FEA489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C3041C89F59800FEA489 /* Assets.xcassets */; };
 		F2E7C30C1C89F59800FEA489 /* BeforeBoarding WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F2E7C30B1C89F59800FEA489 /* BeforeBoarding WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -127,6 +132,8 @@
 		63119F851C8D15C8008F1D8B /* UIViewController+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utility.h"; sourceTree = "<group>"; };
 		63119F861C8D15C8008F1D8B /* UIViewController+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utility.m"; sourceTree = "<group>"; };
 		63119F8A1C8D1AAD008F1D8B /* GlobalPrefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalPrefix.h; sourceTree = "<group>"; };
+		63119F911C8D2298008F1D8B /* BBDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBDataRequest.h; sourceTree = "<group>"; };
+		63119F921C8D2298008F1D8B /* BBDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBDataRequest.m; sourceTree = "<group>"; };
 		63133A5F1C892E6B0063D405 /* BeforeBoarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeforeBoarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63133A631C892E6B0063D405 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63133A651C892E6B0063D405 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -141,6 +148,14 @@
 		63133A831C892E6B0063D405 /* BeforeBoardingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeforeBoardingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63133A871C892E6C0063D405 /* BeforeBoardingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeforeBoardingUITests.m; sourceTree = "<group>"; };
 		63133A891C892E6C0063D405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63DB072D1C8D243D003DE2CD /* BBUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUserRequest.h; sourceTree = "<group>"; };
+		63DB072E1C8D243D003DE2CD /* BBUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUserRequest.m; sourceTree = "<group>"; };
+		63DB07301C8D245E003DE2CD /* BBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBaseViewController.h; sourceTree = "<group>"; };
+		63DB07311C8D245F003DE2CD /* BBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBaseViewController.m; sourceTree = "<group>"; };
+		63DB07331C8D24C9003DE2CD /* BBRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRootViewController.h; sourceTree = "<group>"; };
+		63DB07341C8D24C9003DE2CD /* BBRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRootViewController.m; sourceTree = "<group>"; };
+		63DB07361C8D2666003DE2CD /* BBSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSignInViewController.h; sourceTree = "<group>"; };
+		63DB07371C8D2666003DE2CD /* BBSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSignInViewController.m; sourceTree = "<group>"; };
 		A3C88915853202EBC33F904B /* libPods-BeforeBoarding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeforeBoarding.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A528BB7B7A74FF6E630591AD /* Pods-BeforeBoarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeforeBoarding.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeforeBoarding/Pods-BeforeBoarding.release.xcconfig"; sourceTree = "<group>"; };
 		B4FE8CE50958E3C68367271D /* Pods-BeforeBoarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeforeBoarding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeforeBoarding/Pods-BeforeBoarding.debug.xcconfig"; sourceTree = "<group>"; };
@@ -246,6 +261,58 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		63119F8B1C8D21BD008F1D8B /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		63119F8C1C8D21BD008F1D8B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		63119F8D1C8D21BD008F1D8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63119F8E1C8D21BD008F1D8B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				63119F911C8D2298008F1D8B /* BBDataRequest.h */,
+				63119F921C8D2298008F1D8B /* BBDataRequest.m */,
+				63DB072D1C8D243D003DE2CD /* BBUserRequest.h */,
+				63DB072E1C8D243D003DE2CD /* BBUserRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		63119F8F1C8D21BD008F1D8B /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		63119F901C8D21BD008F1D8B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63DB07301C8D245E003DE2CD /* BBBaseViewController.h */,
+				63DB07311C8D245F003DE2CD /* BBBaseViewController.m */,
+				63DB07331C8D24C9003DE2CD /* BBRootViewController.h */,
+				63DB07341C8D24C9003DE2CD /* BBRootViewController.m */,
+				63DB07361C8D2666003DE2CD /* BBSignInViewController.h */,
+				63DB07371C8D2666003DE2CD /* BBSignInViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		63133A561C892E6B0063D405 = {
 			isa = PBXGroup;
 			children = (
@@ -276,13 +343,13 @@
 			isa = PBXGroup;
 			children = (
 				63119F491C8D14B4008F1D8B /* Style */,
-				632898A81C8BD24600FAD5DE /* Custom */,
 				63119F4D1C8D1501008F1D8B /* Common */,
-				632898A91C8BD24600FAD5DE /* Manager */,
-				632898AA1C8BD24600FAD5DE /* Model */,
-				632898AB1C8BD24600FAD5DE /* Request */,
-				632898AC1C8BD24600FAD5DE /* ThirdParty */,
-				632898AD1C8BD24600FAD5DE /* ViewController */,
+				63119F8B1C8D21BD008F1D8B /* Custom */,
+				63119F8C1C8D21BD008F1D8B /* Manager */,
+				63119F8D1C8D21BD008F1D8B /* Model */,
+				63119F8E1C8D21BD008F1D8B /* Request */,
+				63119F8F1C8D21BD008F1D8B /* ThirdParty */,
+				63119F901C8D21BD008F1D8B /* ViewController */,
 				63133A651C892E6B0063D405 /* AppDelegate.h */,
 				63133A661C892E6B0063D405 /* AppDelegate.m */,
 				63133A6B1C892E6B0063D405 /* Main.storyboard */,
@@ -319,48 +386,6 @@
 				63133A891C892E6C0063D405 /* Info.plist */,
 			);
 			path = BeforeBoardingUITests;
-			sourceTree = "<group>";
-		};
-		632898A81C8BD24600FAD5DE /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Custom;
-			sourceTree = "<group>";
-		};
-		632898A91C8BD24600FAD5DE /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		632898AA1C8BD24600FAD5DE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		632898AB1C8BD24600FAD5DE /* Request */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		632898AC1C8BD24600FAD5DE /* ThirdParty */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		632898AD1C8BD24600FAD5DE /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		7E2FE9DA83C323A87050674E /* Pods */ = {
@@ -659,14 +684,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63DB07351C8D24C9003DE2CD /* BBRootViewController.m in Sources */,
 				63119F741C8D1501008F1D8B /* NSData+AES.m in Sources */,
 				63119F881C8D15C8008F1D8B /* UIViewController+Utility.m in Sources */,
 				63119F771C8D1501008F1D8B /* NSString+Additions.m in Sources */,
 				63119F4C1C8D14B4008F1D8B /* OPStyleFactory.m in Sources */,
+				63DB072F1C8D243D003DE2CD /* BBUserRequest.m in Sources */,
+				63DB07381C8D2666003DE2CD /* BBSignInViewController.m in Sources */,
 				63119F7E1C8D1501008F1D8B /* UIViewController+TapResignFirstResponder.m in Sources */,
 				63133A671C892E6B0063D405 /* AppDelegate.m in Sources */,
+				63119F931C8D2298008F1D8B /* BBDataRequest.m in Sources */,
 				63119F7B1C8D1501008F1D8B /* UIViewController+CaptureView.m in Sources */,
 				63119F7D1C8D1501008F1D8B /* UIViewController+Keyboard.m in Sources */,
+				63DB07321C8D245F003DE2CD /* BBBaseViewController.m in Sources */,
 				63119F7C1C8D1501008F1D8B /* UIViewController+Error.m in Sources */,
 				63119F781C8D1501008F1D8B /* UIColor+Hex.m in Sources */,
 				63133A641C892E6B0063D405 /* main.m in Sources */,
