@@ -148,6 +148,13 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="arrivalAirportLabel" destination="bpf-mN-FYR" id="S54-pi-CAO"/>
+                                            <outlet property="arrivalTimeLabel" destination="06P-mC-See" id="dHg-Mw-gaD"/>
+                                            <outlet property="dateLabel" destination="Tg9-v9-hVG" id="4iU-XH-qMd"/>
+                                            <outlet property="departAirportLabel" destination="kI1-QB-uD5" id="MZG-aL-hCM"/>
+                                            <outlet property="departTimeLabel" destination="f4h-t2-E0y" id="wvU-L3-vUE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -164,7 +171,13 @@
                             <constraint firstItem="foO-HC-TS6" firstAttribute="top" secondItem="q6Y-Uh-OOt" secondAttribute="bottom" constant="-64" id="qLb-c0-aSX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="OTy-hZ-W4Y"/>
+                    <navigationItem key="navigationItem" id="OTy-hZ-W4Y">
+                        <barButtonItem key="leftBarButtonItem" title="Logoff" id="ooE-8j-Mch">
+                            <connections>
+                                <action selector="logOff:" destination="rLx-KX-l4f" id="SF9-Gr-XWf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="foO-HC-TS6" id="map-WD-ftL"/>
                         <segue destination="nef-bG-63F" kind="presentation" identifier="showSignIn" id="Yhb-Gj-MaD"/>

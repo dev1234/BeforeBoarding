@@ -10,6 +10,7 @@
 @interface BBUserObject : BBObject
 
 @property (nonatomic ,strong) NSString *pilotID;
+@property (nonatomic ,strong) NSString *userName;
 @property (nonatomic, strong) NSArray *tasks;
 
 @end

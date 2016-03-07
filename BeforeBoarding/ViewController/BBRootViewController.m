@@ -72,6 +72,9 @@
 }
 
 - (void)requestForTasks {
+    if (![BBSession session].user) {
+        return;
+    }
     [self showProgressHudWithMessage:@"loading..."];
     BBTaskRequest *request = [BBTaskRequest request];
     request.path = [request.path stringByAppendingPathComponent:[BBSession session].user.pilotID];
@@ -91,8 +94,16 @@
 }
 
 - (void)reloadUI {
+    if (![BBSession session].user) {
+        return;
+    }
     [self.tableView reloadData];
+    self.title = [NSString stringWithFormat:@"%@'s tasks", [BBSession session].user.userName];
     self.tableView.tableFooterView = [UIView new];
+}
+
+- (IBAction)logOff:(UIBarButtonItem *)sender {
+    [[BBSession session] signOut];
 }
 
 - (void)autoSignIn
@@ -167,7 +178,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BBTaskTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([BBTaskTableViewCell class]) forIndexPath:indexPath];
-
+    [cell setupUIWithObject:self.dataSource[indexPath.row] indexPath:indexPath];
     return cell;
 }
 
