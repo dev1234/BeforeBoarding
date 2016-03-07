@@ -144,7 +144,7 @@
     /* 显示中心 */
     CLLocationCoordinate2D center = CLLocationCoordinate2DMake(latitude, longitude);
     //    /* 显示范围 */
-    CGFloat zoomLevel = 0.0255;
+    CGFloat zoomLevel = 0.23;
     MKCoordinateSpan span = MKCoordinateSpanMake(zoomLevel, zoomLevel);
     MKCoordinateRegion region = MKCoordinateRegionMake(center, span);
     /* 设置地图显示区域 */
