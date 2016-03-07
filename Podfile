@@ -11,6 +11,7 @@ pod 'SVProgressHUD'
 pod 'AFNetworkActivityLogger'
 pod 'KVOController'
 pod 'SSKeychain'
+pod 'YYModel'
 
 end
 
