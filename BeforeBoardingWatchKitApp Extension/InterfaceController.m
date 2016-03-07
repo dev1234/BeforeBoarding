@@ -7,7 +7,7 @@
 //
 
 #import "InterfaceController.h"
-#import "BBFlightRequest.h"
+#import "BBFlightListRequest.h"
 
 
 @interface InterfaceController()
@@ -34,7 +34,7 @@
 }
 
 - (IBAction)updateAction {
-    []
+    
     
 }
 
