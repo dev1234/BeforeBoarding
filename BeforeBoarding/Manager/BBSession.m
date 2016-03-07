@@ -126,7 +126,7 @@
 {
     _user = user;
 //    [self registerToken];
-    [self updateStatus:BBUserStatusSignOut];
+    [self updateStatus:BBUserStatusSignIn];
 //    [self requestTips];
 //    [self requstTeacherIntro];
 }

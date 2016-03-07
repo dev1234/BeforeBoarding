@@ -7,6 +7,7 @@
 //
 
 #import "BBUserRequest.h"
+#import "BBUserObject.h"
 
 @implementation BBUserRequest
 
@@ -19,7 +20,16 @@
     return self;
 }
 
+- (id)responseParse:(id)data {
+    BBUserObject *user = nil;
+    if ([data[@"status"] integerValue] == 1) {
+        user = [BBUserObject yy_modelWithJSON:data];
+        return user;
+    }else {
+        NSError *err = [BBDataRequest errorWithReason:data[@"message"]];
+        return err;
+    }
 
-
+}
 
 @end

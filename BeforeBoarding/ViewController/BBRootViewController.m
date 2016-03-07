@@ -24,9 +24,13 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)viewDidAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self observeUserSignInStatus];
+}
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:YES];
 }
 
 - (void)observeUserSignInStatus {
@@ -53,6 +57,7 @@
     }
     else if (BBUserStatusSignIn == status) {
         // 用户登录成功
+        [self dismissViewControllerAnimated:YES completion:nil];
         [self dismissProgressHud];
 //        [self requestForClassList];
     }
@@ -106,7 +111,12 @@
 }
 
 - (void)showSininWithAnimate:(BOOL)animate {
-    
+    if (animate) {
+        [self performSegueWithIdentifier:@"showSignIn" sender:self];
+    }else {
+        [self performSegueWithIdentifier:@"showSignInBefore" sender:self];
+
+    }
 }
 
 - (void)didReceiveMemoryWarning {

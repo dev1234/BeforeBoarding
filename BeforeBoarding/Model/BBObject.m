@@ -1,5 +1,5 @@
 //
-//  BBUserObject.h
+//  BBObject.m
 //  BeforeBoarding
 //
 //  Created by 王顺 on 16/3/7.
@@ -7,8 +7,7 @@
 //
 
 #import "BBObject.h"
-@interface BBUserObject : BBObject
 
-@property (nonatomic ,strong) NSString *pilotID;
+@implementation BBObject
 
 @end

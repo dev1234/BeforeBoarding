@@ -10,4 +10,6 @@
 
 @interface BBDataRequest : WSDataRequest
 
++ (NSError *)errorWithReason:(NSString *)reason;
+
 @end

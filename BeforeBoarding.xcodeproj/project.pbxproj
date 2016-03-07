@@ -34,6 +34,12 @@
 		63DB07321C8D245F003DE2CD /* BBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07311C8D245F003DE2CD /* BBBaseViewController.m */; };
 		63DB07351C8D24C9003DE2CD /* BBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07341C8D24C9003DE2CD /* BBRootViewController.m */; };
 		63DB07381C8D2666003DE2CD /* BBSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07371C8D2666003DE2CD /* BBSignInViewController.m */; };
+		63DB073E1C8D2DE3003DE2CD /* BBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB073D1C8D2DE3003DE2CD /* BBSession.m */; };
+		63DB07411C8D2E2B003DE2CD /* BBUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07401C8D2E2B003DE2CD /* BBUserObject.m */; };
+		63DB07441C8D2F7B003DE2CD /* OPKVDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07431C8D2F7B003DE2CD /* OPKVDatabase.m */; };
+		63DB07471C8D2FB9003DE2CD /* OPRunOnce.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07461C8D2FB9003DE2CD /* OPRunOnce.m */; };
+		63DB074A1C8D37BD003DE2CD /* OPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07491C8D37BD003DE2CD /* OPError.m */; };
+		63DB074D1C8D4185003DE2CD /* BBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB074C1C8D4185003DE2CD /* BBObject.m */; };
 		F2E7C35D1C8D34AC00FEA489 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C35B1C8D34AC00FEA489 /* Interface.storyboard */; };
 		F2E7C35F1C8D34AC00FEA489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C35E1C8D34AC00FEA489 /* Assets.xcassets */; };
 		F2E7C3661C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F2E7C3651C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -42,20 +48,6 @@
 		F2E7C3741C8D34AC00FEA489 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7C3731C8D34AC00FEA489 /* NotificationController.m */; };
 		F2E7C3761C8D34AC00FEA489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C3751C8D34AC00FEA489 /* Assets.xcassets */; };
 		F2E7C37A1C8D34AC00FEA489 /* BeforeBoardingWatchKitApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F2E7C3591C8D34AC00FEA489 /* BeforeBoardingWatchKitApp.app */; };
-		63DB073E1C8D2DE3003DE2CD /* BBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB073D1C8D2DE3003DE2CD /* BBSession.m */; };
-		63DB07411C8D2E2B003DE2CD /* BBUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07401C8D2E2B003DE2CD /* BBUserObject.m */; };
-		63DB07441C8D2F7B003DE2CD /* OPKVDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07431C8D2F7B003DE2CD /* OPKVDatabase.m */; };
-		63DB07471C8D2FB9003DE2CD /* OPRunOnce.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07461C8D2FB9003DE2CD /* OPRunOnce.m */; };
-		63DB074A1C8D37BD003DE2CD /* OPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07491C8D37BD003DE2CD /* OPError.m */; };
-		F2E7C3031C89F59800FEA489 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C3011C89F59800FEA489 /* Interface.storyboard */; };
-		F2E7C3051C89F59800FEA489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C3041C89F59800FEA489 /* Assets.xcassets */; };
-		F2E7C30C1C89F59800FEA489 /* BeforeBoarding WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F2E7C30B1C89F59800FEA489 /* BeforeBoarding WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F2E7C3141C89F59800FEA489 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7C3131C89F59800FEA489 /* InterfaceController.m */; };
-		F2E7C3171C89F59800FEA489 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7C3161C89F59800FEA489 /* ExtensionDelegate.m */; };
-		F2E7C31A1C89F59800FEA489 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7C3191C89F59800FEA489 /* NotificationController.m */; };
-		F2E7C31D1C89F59800FEA489 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7C31C1C89F59800FEA489 /* GlanceController.m */; };
-		F2E7C31F1C89F59800FEA489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C31E1C89F59800FEA489 /* Assets.xcassets */; };
-		F2E7C3231C89F59800FEA489 /* BeforeBoarding WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F2E7C2FF1C89F59800FEA489 /* BeforeBoarding WatchKit App.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +171,8 @@
 		63DB07461C8D2FB9003DE2CD /* OPRunOnce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPRunOnce.m; sourceTree = "<group>"; };
 		63DB07481C8D37BD003DE2CD /* OPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPError.h; sourceTree = "<group>"; };
 		63DB07491C8D37BD003DE2CD /* OPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPError.m; sourceTree = "<group>"; };
+		63DB074B1C8D4185003DE2CD /* BBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBObject.h; sourceTree = "<group>"; };
+		63DB074C1C8D4185003DE2CD /* BBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBObject.m; sourceTree = "<group>"; };
 		A3C88915853202EBC33F904B /* libPods-BeforeBoarding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeforeBoarding.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A528BB7B7A74FF6E630591AD /* Pods-BeforeBoarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeforeBoarding.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeforeBoarding/Pods-BeforeBoarding.release.xcconfig"; sourceTree = "<group>"; };
 		B4FE8CE50958E3C68367271D /* Pods-BeforeBoarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeforeBoarding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeforeBoarding/Pods-BeforeBoarding.debug.xcconfig"; sourceTree = "<group>"; };
@@ -307,6 +301,8 @@
 		63119F8D1C8D21BD008F1D8B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63DB074B1C8D4185003DE2CD /* BBObject.h */,
+				63DB074C1C8D4185003DE2CD /* BBObject.m */,
 				63DB073F1C8D2E2B003DE2CD /* BBUserObject.h */,
 				63DB07401C8D2E2B003DE2CD /* BBUserObject.m */,
 			);
@@ -718,6 +714,7 @@
 				63119F881C8D15C8008F1D8B /* UIViewController+Utility.m in Sources */,
 				63DB07411C8D2E2B003DE2CD /* BBUserObject.m in Sources */,
 				63119F771C8D1501008F1D8B /* NSString+Additions.m in Sources */,
+				63DB074D1C8D4185003DE2CD /* BBObject.m in Sources */,
 				63DB074A1C8D37BD003DE2CD /* OPError.m in Sources */,
 				63DB073E1C8D2DE3003DE2CD /* BBSession.m in Sources */,
 				63119F4C1C8D14B4008F1D8B /* OPStyleFactory.m in Sources */,
@@ -1079,6 +1076,7 @@
 				F2E7C37D1C8D34AC00FEA489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2E7C37F1C8D34AC00FEA489 /* Build configuration list for PBXNativeTarget "BeforeBoardingWatchKitApp" */ = {
 			isa = XCConfigurationList;
@@ -1087,6 +1085,7 @@
 				F2E7C3811C8D34AC00FEA489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
