@@ -44,14 +44,6 @@
 		63DB07531C8D513B003DE2CD /* BBTaskObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07521C8D513B003DE2CD /* BBTaskObject.m */; };
 		63DB07561C8D5159003DE2CD /* BBAirportObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07551C8D5159003DE2CD /* BBAirportObject.m */; };
 		63DB07591C8D5171003DE2CD /* BBWeatherObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07581C8D5171003DE2CD /* BBWeatherObject.m */; };
-		F2E7C35D1C8D34AC00FEA489 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C35B1C8D34AC00FEA489 /* Interface.storyboard */; };
-		F2E7C35F1C8D34AC00FEA489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C35E1C8D34AC00FEA489 /* Assets.xcassets */; };
-		F2E7C3661C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F2E7C3651C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F2E7C36E1C8D34AC00FEA489 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7C36D1C8D34AC00FEA489 /* InterfaceController.m */; };
-		F2E7C3711C8D34AC00FEA489 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7C3701C8D34AC00FEA489 /* ExtensionDelegate.m */; };
-		F2E7C3741C8D34AC00FEA489 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7C3731C8D34AC00FEA489 /* NotificationController.m */; };
-		F2E7C3761C8D34AC00FEA489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C3751C8D34AC00FEA489 /* Assets.xcassets */; };
-		F2E7C37A1C8D34AC00FEA489 /* BeforeBoardingWatchKitApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F2E7C3591C8D34AC00FEA489 /* BeforeBoardingWatchKitApp.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,20 +61,6 @@
 			remoteGlobalIDString = 63133A5E1C892E6B0063D405;
 			remoteInfo = BeforeBoarding;
 		};
-		F2E7C3671C8D34AC00FEA489 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 63133A571C892E6B0063D405 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F2E7C3641C8D34AC00FEA489;
-			remoteInfo = "BeforeBoardingWatchKitApp Extension";
-		};
-		F2E7C3781C8D34AC00FEA489 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 63133A571C892E6B0063D405 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F2E7C3581C8D34AC00FEA489;
-			remoteInfo = BeforeBoardingWatchKitApp;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,20 +70,8 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				F2E7C37A1C8D34AC00FEA489 /* BeforeBoardingWatchKitApp.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2E7C37E1C8D34AC00FEA489 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				F2E7C3661C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -188,11 +154,9 @@
 		A3C88915853202EBC33F904B /* libPods-BeforeBoarding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeforeBoarding.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A528BB7B7A74FF6E630591AD /* Pods-BeforeBoarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeforeBoarding.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeforeBoarding/Pods-BeforeBoarding.release.xcconfig"; sourceTree = "<group>"; };
 		B4FE8CE50958E3C68367271D /* Pods-BeforeBoarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeforeBoarding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeforeBoarding/Pods-BeforeBoarding.debug.xcconfig"; sourceTree = "<group>"; };
-		F2E7C3591C8D34AC00FEA489 /* BeforeBoardingWatchKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeforeBoardingWatchKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E7C35C1C8D34AC00FEA489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		F2E7C35E1C8D34AC00FEA489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2E7C3601C8D34AC00FEA489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2E7C3651C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BeforeBoardingWatchKitApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E7C36B1C8D34AC00FEA489 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		F2E7C36C1C8D34AC00FEA489 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
 		F2E7C36D1C8D34AC00FEA489 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
@@ -221,13 +185,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		63133A801C892E6B0063D405 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2E7C3621C8D34AC00FEA489 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,8 +337,6 @@
 				63133A5F1C892E6B0063D405 /* BeforeBoarding.app */,
 				63133A781C892E6B0063D405 /* BeforeBoardingTests.xctest */,
 				63133A831C892E6B0063D405 /* BeforeBoardingUITests.xctest */,
-				F2E7C3591C8D34AC00FEA489 /* BeforeBoardingWatchKitApp.app */,
-				F2E7C3651C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -504,7 +459,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				F2E7C3791C8D34AC00FEA489 /* PBXTargetDependency */,
 			);
 			name = BeforeBoarding;
 			productName = BeforeBoarding;
@@ -547,40 +501,6 @@
 			productReference = 63133A831C892E6B0063D405 /* BeforeBoardingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		F2E7C3581C8D34AC00FEA489 /* BeforeBoardingWatchKitApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2E7C37F1C8D34AC00FEA489 /* Build configuration list for PBXNativeTarget "BeforeBoardingWatchKitApp" */;
-			buildPhases = (
-				F2E7C3571C8D34AC00FEA489 /* Resources */,
-				F2E7C37E1C8D34AC00FEA489 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F2E7C3681C8D34AC00FEA489 /* PBXTargetDependency */,
-			);
-			name = BeforeBoardingWatchKitApp;
-			productName = BeforeBoardingWatchKitApp;
-			productReference = F2E7C3591C8D34AC00FEA489 /* BeforeBoardingWatchKitApp.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		F2E7C3641C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2E7C37B1C8D34AC00FEA489 /* Build configuration list for PBXNativeTarget "BeforeBoardingWatchKitApp Extension" */;
-			buildPhases = (
-				F2E7C3611C8D34AC00FEA489 /* Sources */,
-				F2E7C3621C8D34AC00FEA489 /* Frameworks */,
-				F2E7C3631C8D34AC00FEA489 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "BeforeBoardingWatchKitApp Extension";
-			productName = "BeforeBoardingWatchKitApp Extension";
-			productReference = F2E7C3651C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -601,13 +521,6 @@
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 63133A5E1C892E6B0063D405;
 					};
-					F2E7C3581C8D34AC00FEA489 = {
-						CreatedOnToolsVersion = 7.2;
-					};
-					F2E7C3641C8D34AC00FEA489 = {
-						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 479695V7F6;
-					};
 				};
 			};
 			buildConfigurationList = 63133A5A1C892E6B0063D405 /* Build configuration list for PBXProject "BeforeBoarding" */;
@@ -626,8 +539,6 @@
 				63133A5E1C892E6B0063D405 /* BeforeBoarding */,
 				63133A771C892E6B0063D405 /* BeforeBoardingTests */,
 				63133A821C892E6B0063D405 /* BeforeBoardingUITests */,
-				F2E7C3581C8D34AC00FEA489 /* BeforeBoardingWatchKitApp */,
-				F2E7C3641C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -654,23 +565,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2E7C3571C8D34AC00FEA489 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2E7C35F1C8D34AC00FEA489 /* Assets.xcassets in Resources */,
-				F2E7C35D1C8D34AC00FEA489 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2E7C3631C8D34AC00FEA489 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2E7C3761C8D34AC00FEA489 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,16 +673,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2E7C3611C8D34AC00FEA489 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2E7C3711C8D34AC00FEA489 /* ExtensionDelegate.m in Sources */,
-				F2E7C36E1C8D34AC00FEA489 /* InterfaceController.m in Sources */,
-				F2E7C3741C8D34AC00FEA489 /* NotificationController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -801,16 +685,6 @@
 			isa = PBXTargetDependency;
 			target = 63133A5E1C892E6B0063D405 /* BeforeBoarding */;
 			targetProxy = 63133A841C892E6C0063D405 /* PBXContainerItemProxy */;
-		};
-		F2E7C3681C8D34AC00FEA489 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F2E7C3641C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension */;
-			targetProxy = F2E7C3671C8D34AC00FEA489 /* PBXContainerItemProxy */;
-		};
-		F2E7C3791C8D34AC00FEA489 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F2E7C3581C8D34AC00FEA489 /* BeforeBoardingWatchKitApp */;
-			targetProxy = F2E7C3781C8D34AC00FEA489 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -878,7 +752,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -915,7 +789,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -927,6 +801,8 @@
 			baseConfigurationReference = B4FE8CE50958E3C68367271D /* Pods-BeforeBoarding.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BeforeBoarding/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -940,6 +816,8 @@
 			baseConfigurationReference = A528BB7B7A74FF6E630591AD /* Pods-BeforeBoarding.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BeforeBoarding/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -996,64 +874,6 @@
 			};
 			name = Release;
 		};
-		F2E7C37C1C8D34AC00FEA489 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "BeforeBoardingWatchKitApp Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wangshun.BeforeBoarding.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.1;
-			};
-			name = Debug;
-		};
-		F2E7C37D1C8D34AC00FEA489 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "BeforeBoardingWatchKitApp Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wangshun.BeforeBoarding.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.1;
-			};
-			name = Release;
-		};
-		F2E7C3801C8D34AC00FEA489 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				IBSC_MODULE = BeforeBoardingWatchKitApp_Extension;
-				INFOPLIST_FILE = BeforeBoardingWatchKitApp/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = wangshun.BeforeBoarding.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.1;
-			};
-			name = Debug;
-		};
-		F2E7C3811C8D34AC00FEA489 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				IBSC_MODULE = BeforeBoardingWatchKitApp_Extension;
-				INFOPLIST_FILE = BeforeBoardingWatchKitApp/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = wangshun.BeforeBoarding.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.1;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1089,24 +909,6 @@
 			buildConfigurations = (
 				63133A931C892E6C0063D405 /* Debug */,
 				63133A941C892E6C0063D405 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F2E7C37B1C8D34AC00FEA489 /* Build configuration list for PBXNativeTarget "BeforeBoardingWatchKitApp Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F2E7C37C1C8D34AC00FEA489 /* Debug */,
-				F2E7C37D1C8D34AC00FEA489 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F2E7C37F1C8D34AC00FEA489 /* Build configuration list for PBXNativeTarget "BeforeBoardingWatchKitApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F2E7C3801C8D34AC00FEA489 /* Debug */,
-				F2E7C3811C8D34AC00FEA489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

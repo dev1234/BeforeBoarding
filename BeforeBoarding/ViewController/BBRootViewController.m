@@ -11,6 +11,7 @@
 #import "BBSession.h"
 #import <WSControl/WSControl.h>
 #import "BBTaskRequest.h"
+#import "GlobalPrefix.h"
 
 @interface BBRootViewController ()
 
@@ -101,23 +102,23 @@
                 [weakSelf dismissProgressHud];
                 if (error) {
                     UIAlertView *alert = nil;
-//                    if (OPErrorCodePasswordWrong == error.code) {
-//                        alert = [[UIAlertView alloc] initWithTitle:@"错误" message:@"用户名或密码错误，请重新登录！" delegate:nil cancelButtonTitle:@"重新登录" otherButtonTitles:nil];
-//                        [alert setAction:^(NSInteger buttonIndex) {
-//                            [weakSelf showSinin];
-//                        }];
-//                    }
-                    //                    else {
-                    //                        alert = [[UIAlertView alloc] initWithTitle:@"错误" message:@"网络错误，请检查网络并重试！" delegate:nil cancelButtonTitle:@"重试" otherButtonTitles:@"重新登录", nil];
-                    //                        [alert setAction:^(NSInteger buttonIndex) {
-                    //                            if (buttonIndex == 0) {
-                    //                                [weakSelf autoSignIn];
-                    //                            }
-                    //                            else {
-                    //                                [weakSelf showSinin];
-                    //                            }
-                    //                        }];
-                    //                    }
+                    if (OPErrorCodePasswordWrong == error.code) {
+                        alert = [[UIAlertView alloc] initWithTitle:@"错误" message:@"用户名或密码错误，请重新登录！" delegate:nil cancelButtonTitle:@"重新登录" otherButtonTitles:nil];
+                        [alert setAction:^(NSInteger buttonIndex) {
+                            [weakSelf showSininWithAnimate:YES];
+                        }];
+                    }
+                    else {
+                        alert = [[UIAlertView alloc] initWithTitle:@"错误" message:@"网络错误，请检查网络并重试！" delegate:nil cancelButtonTitle:@"重试" otherButtonTitles:@"重新登录", nil];
+                        [alert setAction:^(NSInteger buttonIndex) {
+                            if (buttonIndex == 0) {
+                                [weakSelf autoSignIn];
+                            }
+                            else {
+                                [weakSelf showSininWithAnimate:YES];
+                            }
+                        }];
+                    }
                     [alert show];
                 }
             });
