@@ -1,20 +1,20 @@
 //
-//  GlanceController.m
-//  BeforeBoarding WatchKit App Extension
+//  InterfaceController.m
+//  BeforeBoardingWatchKitApp Extension
 //
-//  Created by 白 云鹏 on 16/3/5.
+//  Created by 白 云鹏 on 16/3/7.
 //  Copyright © 2016年 wangshun. All rights reserved.
 //
 
-#import "GlanceController.h"
+#import "InterfaceController.h"
 
 
-@interface GlanceController()
+@interface InterfaceController()
 
 @end
 
 
-@implementation GlanceController
+@implementation InterfaceController
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
@@ -32,6 +32,10 @@
     [super didDeactivate];
 }
 
+- (IBAction)update {
+}
+- (IBAction)updateAction {
+}
 @end
 
 
