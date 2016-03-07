@@ -34,6 +34,14 @@
 		63DB07321C8D245F003DE2CD /* BBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07311C8D245F003DE2CD /* BBBaseViewController.m */; };
 		63DB07351C8D24C9003DE2CD /* BBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07341C8D24C9003DE2CD /* BBRootViewController.m */; };
 		63DB07381C8D2666003DE2CD /* BBSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07371C8D2666003DE2CD /* BBSignInViewController.m */; };
+		F2E7C35D1C8D34AC00FEA489 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C35B1C8D34AC00FEA489 /* Interface.storyboard */; };
+		F2E7C35F1C8D34AC00FEA489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C35E1C8D34AC00FEA489 /* Assets.xcassets */; };
+		F2E7C3661C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F2E7C3651C8D34AC00FEA489 /* BeforeBoardingWatchKitApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F2E7C36E1C8D34AC00FEA489 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7C36D1C8D34AC00FEA489 /* InterfaceController.m */; };
+		F2E7C3711C8D34AC00FEA489 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7C3701C8D34AC00FEA489 /* ExtensionDelegate.m */; };
+		F2E7C3741C8D34AC00FEA489 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7C3731C8D34AC00FEA489 /* NotificationController.m */; };
+		F2E7C3761C8D34AC00FEA489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E7C3751C8D34AC00FEA489 /* Assets.xcassets */; };
+		F2E7C37A1C8D34AC00FEA489 /* BeforeBoardingWatchKitApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F2E7C3591C8D34AC00FEA489 /* BeforeBoardingWatchKitApp.app */; };
 		63DB073E1C8D2DE3003DE2CD /* BBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB073D1C8D2DE3003DE2CD /* BBSession.m */; };
 		63DB07411C8D2E2B003DE2CD /* BBUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07401C8D2E2B003DE2CD /* BBUserObject.m */; };
 		63DB07441C8D2F7B003DE2CD /* OPKVDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB07431C8D2F7B003DE2CD /* OPKVDatabase.m */; };
