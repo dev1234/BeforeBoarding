@@ -7,6 +7,7 @@
 //
 
 #import "BBTaskRequest.h"
+#import "BBTaskObject.h"
 
 @implementation BBTaskRequest
 - (instancetype)init
@@ -19,6 +20,17 @@
 }
 
 - (id)responseParse:(id)data {
+    if ([data[@"status"] integerValue] == 1) {
+        NSMutableArray *tasks = [NSMutableArray new];
+        for (NSDictionary *dict in data[@"items"]) {
+            BBTaskObject *task = [BBTaskObject yy_modelWithJSON:dict];
+            [tasks addObject:task];
+        }
+        return tasks;
+    }else {
+        NSError *err = [BBDataRequest errorWithReason:data[@"message"]];
+        return err;
+    }
     return nil;
     
 }

@@ -27,6 +27,7 @@ typedef enum : NSUInteger {
 
 
 
+
 + (instancetype)session;
 
 - (void)signIn:(NSString *)username pwd:(NSString *)pwd result:(void(^)(NSError *error))result;

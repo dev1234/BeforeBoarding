@@ -70,11 +70,26 @@
 }
 
 - (void)requestForTasks {
+    [self showProgressHudWithMessage:@"loading..."];
     BBTaskRequest *request = [BBTaskRequest request];
     request.path = [request.path stringByAppendingPathComponent:[BBSession session].user.pilotID];
     [request sendRequest:^(id data, NSError *error) {
-        
+        [self dismissProgressHud];
+        if (error) {
+            [self showErrorInHudWithError:error];
+        }else {
+            [BBSession session].user.tasks = data;
+            [self refreshUI];
+        }
     }];
+}
+
+- (void)prepareDataSource {
+    self.dataSource = [BBSession session].user.tasks;
+}
+
+- (void)reloadUI {
+    [self.tableView reloadData];
 }
 
 - (void)autoSignIn
